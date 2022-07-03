@@ -1,0 +1,66 @@
+@mixin medium {
+    @media screen and (max-width:820px) {
+        @content;
+    }
+    
+}
+@mixin small {
+    @media screen and (max-width:680px) {
+        @content;
+    }
+}
+@mixin card {
+    box-sizing: border-box;
+}
+ 
+@mixin card-title{
+    font-size: 47px;
+    line-height: 70px;
+    font-weight: normal;
+} 
+@mixin card-text {
+    font-size: 22px;
+    line-height: 35px;
+}
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:3rem 2rem;
+    }
+
+}
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header{
+
+        .navbar{
+            position: absolute;
+            top:99%; left:0; right:0;
+            background-color: #000;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a{
+                margin:2rem;
+                font-size: 2rem;
+                display: block;
+            }
+        }
+    }
+}
+

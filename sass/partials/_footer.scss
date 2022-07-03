@@ -1,0 +1,83 @@
+footer{
+    background: #1F1F1F;
+    margin-top: 52px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .footer_text{
+        color: #bdbdbd;
+        flex-wrap: wrap;
+        @include medium{
+            font-size: 8px;
+        }
+    }
+    .footer_contact{
+        color: #fff;
+        transition: ease 2s;
+    }
+    .footer_contact a:hover{
+        color: #666666;
+    }
+    .footer_links{
+        .footer_button{
+            background: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 5px;
+            text-align: right;
+        }
+        a{
+            font-weight: 600;
+            font-size: 14px;
+
+        }
+    }
+    .footer_icon{
+            i{
+                height: 3rem;
+                width: 3rem;
+                line-height: 2rem;
+                font-size: 1.6rem;
+                color: #666666;
+                text-align: center;
+                border-radius: 50%;
+            &:hover{
+                background:#bdbdbd ;
+                color: rgb(49, 49, 49);
+            }
+        }
+    }
+    
+    i{
+        margin: 0 10px;
+        padding: 8px;
+        border: 1px solid #666666;
+        border-radius: 50%;
+        @include card;
+        @include medium{
+            margin-top: 50px;
+        }
+    }
+    .footer_adress{
+        color: #fff;
+        a:hover{
+            color: rgb(198, 198, 198);
+        }
+    }
+    @include medium{
+        padding: 20px;
+        display: block;
+    }
+}
+

@@ -1,0 +1,76 @@
+.nav{
+    padding-bottom: 50px;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 50px;
+        @include medium{
+            display: block;
+        }
+        
+        .link_header{
+            color: #000;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 30px;
+            
+        }
+        .rasprodaja{
+            color: red;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .link_header:hover{
+            color: red;
+        }
+    }
+    
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0; left:0; right:0;
+    z-index: 1000;
+    @include medium{
+        display: block;
+    }
+    .menu a{
+        display: inline-block;
+        margin:0 1rem;
+    }
+    .link_sign{
+        color: #fff;
+        font-size: 14px;
+        background: red;
+        padding: 8px 15px;
+        border-radius: 20px;
+        a:hover{
+            animation: pulsate 1s ease-in-out;
+    
+        }
+        @keyframes pulsate {
+            0%{
+                box-shadow: 0 0 25px #bc1d01, 0 0 50px #ff0000;
+            }
+        }
+    }
+    @include medium{
+        width: 100%;
+        font-size: 8px;
+    }
+
+}
+
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
